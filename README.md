@@ -33,9 +33,9 @@ Isso irá baixar todas as dependências necessárias para o projeto.
 Na raiz do projeto, crie ou atualize o arquivo `.env` com o conteúdo abaixo:
 
 ```env
-VITE_BASE44_APP_ID=6a314a669e89ca5fe5dbf631
-VITE_BASE44_APP_BASE_URL=https://ifallocal.ifalsi.app
-VITE_BASE44_FUNCTIONS_VERSION=prod
+VITE_IFALSI_APP_ID=6a314a669e89ca5fe5dbf631
+VITE_IFALSI_APP_BASE_URL=https://ifallocal.ifalsi.app
+VITE_IFALSI_FUNCTIONS_VERSION=prod
 ```
 
 ### 5. Rodar o projeto
