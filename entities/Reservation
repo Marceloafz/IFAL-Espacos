@@ -1,0 +1,61 @@
+{
+  "name": "Reservation",
+  "type": "object",
+  "properties": {
+    "room_id": {
+      "type": "string"
+    },
+    "room_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Confirmada",
+        "Pendente",
+        "Cancelada"
+      ],
+      "default": "Pendente"
+    },
+    "requester_name": {
+      "type": "string"
+    },
+    "requester_email": {
+      "type": "string"
+    },
+    "recurrence": {
+      "type": "string",
+      "enum": [
+        "Nenhuma",
+        "Semanal",
+        "Quinzenal",
+        "Mensal"
+      ],
+      "default": "Nenhuma"
+    }
+  },
+  "required": [
+    "room_id",
+    "room_name",
+    "title",
+    "date",
+    "start_time",
+    "end_time"
+  ]
+}

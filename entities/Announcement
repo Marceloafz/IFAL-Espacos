@@ -1,0 +1,52 @@
+{
+  "name": "Announcement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Interdi\u00e7\u00e3o",
+        "Evento",
+        "Manuten\u00e7\u00e3o",
+        "Hor\u00e1rio",
+        "Dire\u00e7\u00e3o",
+        "Geral"
+      ],
+      "default": "Geral"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Importante",
+        "Urgente"
+      ],
+      "default": "Normal"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "attachment_url": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title",
+    "content",
+    "category"
+  ]
+}

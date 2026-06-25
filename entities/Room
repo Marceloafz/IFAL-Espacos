@@ -1,0 +1,123 @@
+{
+  "name": "Room",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "room_id": {
+      "type": "string"
+    },
+    "block": {
+      "type": "string",
+      "enum": [
+        "Bloco A",
+        "Bloco B",
+        "Bloco C",
+        "Bloco D",
+        "Bloco E",
+        "Administrativo"
+      ]
+    },
+    "room_type": {
+      "type": "string",
+      "enum": [
+        "Sala de Aula",
+        "Laborat\u00f3rio",
+        "Audit\u00f3rio",
+        "Sala de Reuni\u00e3o",
+        "Biblioteca",
+        "Coordena\u00e7\u00e3o",
+        "Administrativo",
+        "Refeit\u00f3rio"
+      ]
+    },
+    "capacity": {
+      "type": "number"
+    },
+    "area_m2": {
+      "type": "number"
+    },
+    "floor": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Dispon\u00edvel",
+        "Ocupada",
+        "Reservada",
+        "Em Manuten\u00e7\u00e3o"
+      ],
+      "default": "Dispon\u00edvel"
+    },
+    "responsible": {
+      "type": "string"
+    },
+    "has_projector": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_tv": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_computers": {
+      "type": "boolean",
+      "default": false
+    },
+    "computer_count": {
+      "type": "number",
+      "default": 0
+    },
+    "has_whiteboard": {
+      "type": "boolean",
+      "default": true
+    },
+    "has_ac": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_internet": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_accessibility": {
+      "type": "boolean",
+      "default": false
+    },
+    "outlet_count": {
+      "type": "number",
+      "default": 0
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "map_x": {
+      "type": "number"
+    },
+    "map_y": {
+      "type": "number"
+    },
+    "available_hours": {
+      "type": "string"
+    },
+    "last_used": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "name",
+    "room_id",
+    "block",
+    "room_type",
+    "capacity"
+  ]
+}
